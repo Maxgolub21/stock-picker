@@ -529,7 +529,7 @@ def create_direct_tools():
     tools_dict = {}
     
     # Polygon tool
-    polygon_key = os.getenv("POLYGON_API_KEY")
+    polygon_key = st.secrets["POLYGON_API_KEY"]
     if polygon_key:
         tools_dict['polygon'] = PolygonTool(polygon_key)
         st.sidebar.success("✅ Polygon API initialized")
@@ -537,7 +537,7 @@ def create_direct_tools():
         st.sidebar.warning("⚠️ POLYGON_API_KEY not found")
     
     # Brave search tool
-    brave_key = os.getenv("BRAVE_API_KEY")
+    brave_key = st.secrets["BRAVE_API_KEY"]
     if brave_key:
         tools_dict['brave'] = BraveSearchTool(brave_key)
         st.sidebar.success("✅ Brave Search initialized")
