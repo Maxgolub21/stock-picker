@@ -1,0 +1,21 @@
+# Web Framework
+streamlit
+
+# Google Agent Development Kit (ADK)
+# Note: Ensure you have access to the specific google-adk package source
+google-adk
+
+# Data & Models
+pydantic
+pandas
+
+# API & Networking
+requests
+python-dotenv
+httpx
+
+# Async & Concurrency
+asyncio
+
+# Optional but recommended for LiteLLM support
+litellm
